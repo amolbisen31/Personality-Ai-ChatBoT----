@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0b0f19;
+    color: #e5e7eb;
+}
+
+.page {
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 14px 20px;
+    border-bottom: 1px solid #1f2937;
+    font-weight: 600;
+    background: #020617;
+}
+
+.header select {
+    margin-top: 8px;
+    padding: 6px;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message-row {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.message-row.user {
+    justify-content: flex-end;
+}
+
+.message-row.bot {
+    justify-content: flex-start;
+}
+
+.bubble {
+    max-width: 70%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.user .bubble {
+    background: #020617;
+    border: 1px solid #1f2937;
+    color: #e5e7eb;
+}
+
+.bot .bubble {
+    background: rgba(37, 99, 235, 0.12);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    color: #e5e7eb;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+    border-top: 1px solid #1f2937;
+    background: #020617;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    background: rgba(37, 99, 235, 0.15);
+    color: #e5e7eb;
+    font-size: 14px;
+}
+
+.input-area button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
